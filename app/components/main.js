@@ -2,9 +2,9 @@
 var React = require('react-native');
 var FloatingLabel = require('react-native-floating-labels')
 var api = require('../models/api');
+var Dashboard = require('./dashboard');
 
 var {
-  AppRegistry,
   StyleSheet,
   Text,
   NavigatorIOS,
@@ -12,17 +12,6 @@ var {
   View,
   TouchableHighlight,
 } = React;
-
-var Dashboard = React.createClass({
-  render() {
-    return (
-      <View>
-        <Text>{JSON.stringify(this.props.userInfo)}</Text>
-      </View>
-    );
-
-  }
-})
 
 var Main = React.createClass({
   getInitialState() {
